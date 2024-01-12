@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Link from "next/link";
 import {
@@ -7,44 +8,62 @@ import {
   NavbarItem,
   Button,
 } from "@nextui-org/react";
+import { usePathname } from "next/navigation";
 
 const GlobalNavbar = () => {
+  const path = usePathname();
   return (
-    <Navbar
-      classNames={{
-        item: [
-          "flex",
-          "relative",
-          "h-full",
-          "items-center",
-          "data-[active=true]:after:content-['']",
-          "data-[active=true]:after:absolute",
-          "data-[active=true]:after:bottom-0",
-          "data-[active=true]:after:left-0",
-          "data-[active=true]:after:right-0",
-          "data-[active=true]:after:h-[2px]",
-          "data-[active=true]:after:rounded-[2px]",
-          "data-[active=true]:after:bg-primary",
-        ],
-      }}
-    >
+    <Navbar>
       <NavbarBrand>
-        <p className="font-bold text-inherit">SPORTS</p>
+        <Link href="/" className="font-bold text-inherit">
+          SPORTS
+        </Link>
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="/nfl">
+          {/* <CustomLink href="/cfb" title="CFB" className="mr-4" /> */}
+          <Link
+            href="/cfb"
+            className={path === "/cfb" ? "text-blue-600 font-bold" : ""}
+          >
+            CFB
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          {/* <CustomLink href="/nfl" title="NFL" className="mr-4" /> */}
+          <Link
+            href="/nfl"
+            className={path === "/nfl" ? "text-blue-600 font-bold" : ""}
+          >
             NFL
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="/nba" aria-current="page">
+          {/* <CustomLink href="/nba" title="NBA" className="mr-4" /> */}
+          <Link
+            href="/nba"
+            className={path === "/nba" ? "text-blue-600 font-bold" : ""}
+          >
             NBA
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="/mlb">
+          {/* <CustomLink href="/mlb" title="MLB" className="mr-4" /> */}
+          <Link
+            href="/mlb"
+            className={path === "/mlb" ? "text-blue-600 font-bold" : ""}
+          >
             MLB
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          {/* <CustomLink href="/mlb" title="MLB" className="mr-4" /> */}
+          {/* <CustomLink href="/nhl" title="NHL" /> */}
+          <Link
+            href="/nhl2"
+            className={path === "/nhl2" ? "text-blue-600 font-bold" : ""}
+          >
+            NHL2
           </Link>
         </NavbarItem>
       </NavbarContent>
