@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Next Sports Data",
-  description: "A web-based american sports app built with Next.js",
+  description: "A web-based American sports app built with Next.js",
 };
 
 export default function RootLayout({ children }) {
