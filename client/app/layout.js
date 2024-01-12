@@ -1,3 +1,4 @@
+import GlobalNavbar from "@/components/navigation/global";
 import { Providers } from "./providers.jsx";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -11,9 +12,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <body className={inter.className}>
-        <Providers>{children}</Providers>
+        <Providers>
+          <GlobalNavbar>{children}</GlobalNavbar>
+        </Providers>
       </body>
     </html>
   );
