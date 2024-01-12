@@ -15,7 +15,8 @@ export default function RootLayout({ children }) {
     <html lang="en" className="dark">
       <body className={inter.className}>
         <Providers>
-          <GlobalNavbar>{children}</GlobalNavbar>
+          <GlobalNavbar />
+          {children}
         </Providers>
       </body>
     </html>
