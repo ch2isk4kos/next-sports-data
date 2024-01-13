@@ -5,6 +5,7 @@
 [Framer Motion](https://framer.com/motion) _JS Animation Library_</br>
 [Next.js](https://nextjs.org/) _JS Framework_</br>
 [NextUI](https://nextui.org/) _Component Library_</br>
+[Shadcn](https://ui.shadecn.com/docs/installation/next) _Component Library_</br>
 [TailwindCSS](https://tailwindcss.com) _CSS Utility_</br>
 
 ## Server
