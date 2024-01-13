@@ -1,4 +1,15 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Developer Tools
+
+## Client
+
+[Framer Motion](https://framer.com/motion) _JS Animation Library_</br>
+[Next.js](https://nextjs.org/) _JS Framework_</br>
+[NextUI](https://nextjs.org/) _Component Library_</br>
+[TailwindCSS](https://tailwindcss.com) _CSS Utility_</br>
+
+## Server
+
+n/a
 
 ## Getting Started
 
