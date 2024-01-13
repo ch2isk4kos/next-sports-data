@@ -3,6 +3,7 @@
 ## Client
 
 [Framer Motion](https://framer.com/motion) _JS Animation Library_</br>
+[Framer University](https://framer.university/resources) _Framer Resources_</br>
 [Next.js](https://nextjs.org/) _JS Framework_</br>
 [NextUI](https://nextui.org/) _Component Library_</br>
 [Shadcn](https://ui.shadecn.com/docs/installation/next) _Component Library_</br>
