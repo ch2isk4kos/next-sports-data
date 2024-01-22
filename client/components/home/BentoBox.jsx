@@ -31,7 +31,7 @@ const BentoBox = () => {
       {boxes.map((box, i) => (
         <img
           key={i}
-          className={`object-cover h-full w-full row-span-1 rounded-xl border-2 border-slate-400/10 bg-neutral-100 p-6 dark:bg-neutral-900 ${
+          className={`object-contain h-full w-full row-span-1 rounded-xl p-4 border-2 border-slate-400/10 bg-neutral-100 dark:bg-neutral-900 ${
             i === 3 || i === 6 ? "col-span-2" : ""
           }`}
           src={box.img}
