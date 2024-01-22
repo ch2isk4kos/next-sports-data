@@ -42,6 +42,3 @@ const BentoBox = () => {
 };
 
 export default BentoBox;
-// dark:bg-neutral-900
-// bg-neutral-100
-// bg-gradient-to-r from-cyan-500 to-blue-500
