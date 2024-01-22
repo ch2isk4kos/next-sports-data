@@ -27,11 +27,11 @@ const boxes = [
 
 const BentoBox = () => {
   return (
-    <header className="hidden md:grid grid-cols-1 lg:grid md:auto-rows-[192px] md:grid-cols-3 md:gap-4 w-full md:px-40 border-solid border-2 border-blue-500">
+    <header className="hidden sm:grid grid-cols-3 auto-rows-[192px] gap-4 border-solid border-2 border-blue-500">
       {boxes.map((box, i) => (
         <img
           key={i}
-          className={`object-cover sm:h-full h-28 w-full row-span-1 rounded-xl border-2 border-slate-400/10 bg-neutral-100 p-6 dark:bg-neutral-900 ${
+          className={`object-cover h-full w-full row-span-1 rounded-xl border-2 border-slate-400/10 bg-neutral-100 p-6 dark:bg-neutral-900 ${
             i === 3 || i === 6 ? "col-span-2" : ""
           }`}
           src={box.img}
