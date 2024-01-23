@@ -10,7 +10,6 @@ const marqueeVariants = {
         repeateType: "loop",
         duration: 10,
         ease: "linear",
-        // ease: "easeIn",
       },
     },
   },
