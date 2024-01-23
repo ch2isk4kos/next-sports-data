@@ -1,9 +1,13 @@
+"use client";
 import React from "react";
+import BentoBox from "./BentoBox";
+import Marquee from "./Marquee";
 
 const Home = () => {
   return (
-    <div>
-      <h1>Welcome Homepage!</h1>
+    <div className="w-full md:w-[60%] border-solid border-2 border-red-500">
+      <BentoBox />
+      <Marquee />
     </div>
   );
 };
