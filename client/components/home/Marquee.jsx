@@ -1,15 +1,16 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const marquee = {
+const marqueeVariants = {
   animate: {
-    x: [0, -1035],
+    x: [-1035, 1035],
     transition: {
       x: {
         repeat: Infinity,
         repeateType: "loop",
-        duration: 5,
+        duration: 10,
         ease: "linear",
+        // ease: "easeIn",
       },
     },
   },
@@ -17,10 +18,14 @@ const marquee = {
 
 const Marquee = () => {
   return (
-    <div>
-      <div className="marquee">
-        <motion.div className="track" variants={marquee} animate="animate">
-          <h1>Hello, World!</h1>
+    <div className="border-2 border-solid-blue">
+      <div className="relative w-full max-w-full h-[206px] overflow-hidden">
+        <motion.div
+          className="whitespace-nowrap"
+          variants={marqueeVariants}
+          animate="animate"
+        >
+          <h1 className="text-9xl">Hello, World!</h1>
         </motion.div>
       </div>
     </div>
