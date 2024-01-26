@@ -2,6 +2,7 @@
 
 ## Client
 
+[Flubber](https://github.com/veltman/flubber) _SVG Transition Animator_</br>
 [Framer Motion](https://framer.com/motion) _JS Animation Library_</br>
 [Framer University](https://framer.university/resources) _Framer Resources_</br>
 [Next.js](https://nextjs.org/) _JS Framework_</br>
