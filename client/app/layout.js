@@ -1,4 +1,4 @@
-import GlobalNavbar from "@/components/navigation/global";
+import GlobalNavbar from "@/components/navigation/GlobalNavbar";
 import { Providers } from "./providers.jsx";
 import { Inter } from "next/font/google";
 import "./globals.css";
