@@ -37,9 +37,9 @@ const boxes = [
 
 const BentoBox = () => {
   return (
-    <header className="hidden sm:grid grid-cols-3 auto-rows-[192px] gap-4 border-solid border-2 border-blue-500">
-      {boxes.map((box, i) => (
-        <>
+    <>
+      <header className="hidden sm:grid grid-cols-3 auto-rows-[192px] gap-4 border-solid border-2 border-blue-500">
+        {boxes.map((box, i) => (
           <img
             key={i}
             className={`object-contain h-full w-full row-span-1 rounded-xl p-4 border-2 border-slate-400/10 bg-neutral-100 dark:bg-neutral-900 ${
@@ -47,12 +47,12 @@ const BentoBox = () => {
             }`}
             src={box.img}
           />
-        </>
-      ))}
+        ))}
+      </header>
       <button className="absolute top-[60%] right-[30%] sm:right-[25%] rounded-xl p-4 border-2 border-blue">
         Click Me
       </button>
-    </header>
+    </>
   );
 };
 
