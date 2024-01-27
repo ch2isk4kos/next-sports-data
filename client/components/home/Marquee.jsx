@@ -9,7 +9,7 @@ const marqueeVariants = {
       x: {
         repeat: Infinity,
         repeateType: "loop",
-        duration: 10,
+        duration: 25,
         ease: "linear",
       },
     },
@@ -32,7 +32,7 @@ const Marquee = () => {
           nflScores.map((score) => (
             <motion.div
               key={score.uid}
-              className="w-full h-auto mx-6 border-2 border-solid-blue"
+              className="w-[25%] h-auto mx-3 border-2 border-blue-500"
               variants={marqueeVariants}
               animate="animate"
             >
