@@ -37,6 +37,10 @@ const Marquee = () => {
               animate="animate"
             >
               <h1 className="text-2xl">{score.shortName}</h1>
+              {/* {score.competitions.competitors.map((comp) => (
+                <h3>{comp.}</h3>
+              ))} */}
+              <h3>{score.status.displayClock}</h3>
             </motion.div>
           ))}
       </div>
