@@ -27,16 +27,16 @@ const Marquee = () => {
 
   return (
     <div className="border-2 border-solid-blue">
-      <div className="relative flex flex-row justify-center items-center w-full max-w-full h-[206px] p-16 overflow-hidden">
+      <div className="relative flex flex-row justify-center items-center w-full max-w-full h-[100px] p-16 overflow-hidden">
         {nflScores &&
           nflScores.map((score) => (
             <motion.div
               key={score.uid}
-              className="w-24 h-auto mx-6 border-2 border-solid-blue"
+              className="w-full h-auto mx-6 border-2 border-solid-blue"
               variants={marqueeVariants}
               animate="animate"
             >
-              <h1 className="text-5xl">{score.shortName}</h1>
+              <h1 className="text-2xl">{score.shortName}</h1>
             </motion.div>
           ))}
       </div>
