@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import BentoBox from "./BentoBox";
 import Marquee from "./Marquee";
 
