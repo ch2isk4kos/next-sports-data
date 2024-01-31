@@ -1,5 +1,5 @@
 "use server";
-export async function getNFLScores() {
+export async function getNFLNews() {
   const news = process.env.NFL_NEWS;
   try {
     const res = await fetch(`${news}`);
