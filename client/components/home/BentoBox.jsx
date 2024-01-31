@@ -49,9 +49,9 @@ const BentoBox = () => {
           />
         ))}
       </header>
-      <button className="absolute top-[60%] right-[30%] sm:right-[25%] rounded-xl p-4 border-2 border-blue">
+      {/* <button className="absolute top-[60%] right-[30%] sm:right-[25%] rounded-xl p-4 border-2 border-blue">
         Click Me
-      </button>
+      </button> */}
     </>
   );
 };
